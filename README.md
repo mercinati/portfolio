@@ -1,2 +1,1 @@
-# resume
-My Resume for Web Development
+my portfolio website
