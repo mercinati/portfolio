@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Gupta - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Portfolio</a>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>BCA Student</p>
+                <h1>Hi, I'm <span>Karan</span> Gupta<br>From Jabalpur</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="about.webp" alt="placeholder">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Creative and innovative programmer with a strong ability to translate business requirements into technical solutions. Focused on contributing to impactful projects while advancing knowledge in software development.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+                        <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>BCA (Bachelor of Computer Application) from Gyan Ganga College of Excellence, Jabalpur<br>CGPA: 7.5 (on-going)</li>
+                            <li><span>2022</span><br>Higher Secondary Education from Sanatan Dharam Public Higher Secondary School<br>Percentage: 73.4%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span>Inter-College Exhibition</span><br>Selected for Inter-College level project exhibition</li>
+                            <li><span>Game Development</span><br>Made 2 junior level games while learning JavaScript in 2nd year</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Java Internship</span><br>Java Internship training in Anudip Foundation</li>
+                            <li><span>OOPs and Spring</span><br>Understanding the OOPs concept and Spring framework with hands-on Java-based application projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div id="skills">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="skills-list">
+                <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Development</h2>
+                    <p>Proficient in Java programming, OOPs concepts, and building robust applications using Java frameworks like Spring Boot and Hibernate.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database Management</h2>
+                    <p>Skilled in MySQL, JDBC connectivity, and creating efficient database structures for optimal data management and retrieval.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Experience with HTML, CSS, and integrating frontend with backend services through REST APIs.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h2>API Development</h2>
+                    <p>Developed RESTful APIs with Spring Boot and integrated third-party APIs into applications for enhanced functionality.</p>
+                </div>
+                <!-- <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>Data Structures & Algorithms</h2>
+                    <p>Strong foundation in DSA concepts to create efficient solutions to complex programming problems.</p>
+                </div> -->
+                <div>
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <h2>Development Tools</h2>
+                    <p>Proficient with Visual Studio Code, Eclipse, Postman, and other development tools for efficient programming workflows.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="EMS.webp" alt="Employee Management System">
+                    <div class="layer">
+                        <h3>Employee Management System</h3>
+                        <p>Developed an intuitive backend enabling efficient data management with Spring Boot and REST APIs. Reduced database query times by 25%.</p>
+                        <a href="https://github.com/mercinati/Spring-boot-Employee_Management/tree/main/Employee"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="CIMS.webp" alt="CIMS for Police Official">
+                    <div class="layer">
+                        <h3>CIMS for Police Official</h3>
+                        <p>A console-based Crime Management System for Police Officials to manage and track crime and criminals with area-wise tracking and reporting.</p>
+                        <a href="https://github.com/mercinati/CIMS-Project/tree/main/CIMS/src"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="/VF.png" alt="Video Fetcher">
+                    <div class="layer">
+                        <h3>Video Fetcher</h3>
+                        <p>API-based video feature app that integrates YouTube's API to fetch and display videos dynamically, allowing users to search and interact with content.</p>
+                        <a href="https://mercinati.github.io/VideoFetcher/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="game1.png" alt="JavaScript Game 1">
+                    <div class="layer">
+                        <h3>JavaScript Game 1</h3>
+                        <p>A web-based game developed using JavaScript during my learning journey.</p>
+                        <a href="https://mercinati.github.io/Tic-Tak-Toe-Game/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="game2.png" alt="JavaScript Game 2">
+                    <div class="layer">
+                        <h3>JavaScript Game 2</h3>
+                        <p>Another interactive web game created using JavaScript, HTML and CSS.</p>
+                        <a href="https://mercinati.github.io/Stone-Paper-Scissors-Game/"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/mercinati?tab=repositories" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> karangupta9755@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +91 7489990205</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/karan-gupta-384462231/"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mercinati"><i class="fab fa-github"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1BOKY0w2wqxeMEmsh-nx-jAfF6XUnEA-E/view?usp=sharing" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2025. Made with <i class="fas fa-heart"></i> by Karan Gupta</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
